@@ -7354,3 +7354,28 @@ footer .footer-bottom .text-end li {
     text-decoration: underline;
 }
 
+.privacy-policy h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy h5 {
+    margin-top: 20px;
+}
+
+.privacy-policy ul {
+    margin-bottom: 20px;
+}
+.privacy-policy li{
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+.privacy-policy p {
+    margin-bottom: 15px;
+}
+.navbar-header .navbar-brand img.logo-scrolled {
+    height: 120px;   /* adjust 60–70px if needed */
+    width: 100%;
+    object-fit: contain;
+}
