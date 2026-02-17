@@ -7447,6 +7447,14 @@ footer .footer-bottom .text-end li {
   /* visually increases size */
   transform-origin: left center;
 }
+.logo-mobile{
+    height: 60px;
+    /* actual image height */
+    width: auto;
+    transform: scale(2);
+    /* visually increases size */
+    transform-origin: left center;
+}
 .services-equal {
   display: flex;
   flex-wrap: wrap;
