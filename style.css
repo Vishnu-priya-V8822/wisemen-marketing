@@ -7210,6 +7210,7 @@ footer .link li:last-child {
 
 footer .link li a {
   color: #96aac1;
+  font-size: 15px;
 }
 
 footer .link a:hover {
