@@ -70,8 +70,8 @@ Table of contents
   --dark: #06278a;
   --dark-secondary: #06278a;
   --white: #ffffff;
-  --color-primary: #4154f1;
-  --color-secondary: #9d00ff;
+  --color-primary: #000000;
+  --color-secondary: #c6a052;
   --color-style-two: #1aa79d;
   --color-style-three: #08736b;
   --color-style-four: #fe551f;
@@ -84,7 +84,7 @@ Table of contents
   --box-shadow-tertiary: 0px 2px 12px 0px #e7e7e7;
   --box-shadow-dark: 0px 0px 0px;
   --bg-gray: #eef0f6;
-  --bg-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-primary));
+  --bg-gradient: linear-gradient(to right, var(--color-secondary), var(--color-secondary), var(--color-primary));
   --bg-gradient-style-two: linear-gradient(to right, var(--color-style-two), var(--color-style-three), var(--color-style-two));
   --bg-gradient-style-three: linear-gradient(to right, var(--color-style-four), var(--color-style-five), var(--color-style-four));
 }
@@ -995,9 +995,9 @@ p {
 }
 
 .btn.btn-light {
-  color: var(--color-heading);
+  color:#ffffff;
   border: none;
-  background: var(--white);
+  background: #000000;
   border: 2px solid transparent;
 }
 
@@ -3686,7 +3686,7 @@ body,
   background: var(--color-style-two);
   background: -webkit-linear-gradient(top left, var(--color-style-two), #11EBDB);
   background: -moz-linear-gradient(top left, var(--color-style-two), #11EBDB);
-  background: linear-gradient(to bottom right, var(--color-style-two), #11EBDB);
+  /* background: linear-gradient(to bottom right, var(--color-style-two), #11EBDB); */
 }
 
 .services-area .services-items .owl-item:nth-child(2n) .item .icon i,
@@ -6834,7 +6834,8 @@ i.fas.fa-envelope-open {
 }
 
 .cornflower-blue .contact-us-area form button {
-  background: linear-gradient(to bottom right, #644DED, #811389);
+  /* background: linear-gradient(to bottom right, #c6a052, #000000); */
+  background-color: #c6a052;
 }
 
 .eastern-blue .contact-us-area form button {
@@ -6865,7 +6866,7 @@ form img.loader {
 
 .contact-us-area .address-items {
   padding: 105px 30px;
-  background: linear-gradient(to bottom right, var(--color-primary), #061169);
+  background: linear-gradient(to bottom right, var(--color-primary), #c6a052);
   margin-right: 15px;
   position: relative;
   z-index: 1;
@@ -6873,7 +6874,7 @@ form img.loader {
 }
 
 .cornflower-blue .contact-us-area .address-items {
-  background: linear-gradient(to bottom right, #644DED, #811389);
+  background: linear-gradient(to bottom right, #c6a052, #000000);
 }
 
 .eastern-blue .contact-us-area .address-items {
@@ -7297,7 +7298,7 @@ footer .footer-bottom .text-end li {
 
 .cornflower-blue .site-preloader .ring {
   border: 3px solid rgba(99, 77, 237, 0.2);
-  border-top-color: var(--color-secondary);
+  border-top-color: var(--color-primary);
   color: var(--white);
 }
 
@@ -7320,7 +7321,7 @@ footer .footer-bottom .text-end li {
 }
 
 .cornflower-blue .site-preloader h2 {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .site-preloader h2 {
@@ -7512,7 +7513,7 @@ footer .footer-bottom .text-end li {
 }
 
 .services-sidebar ul li.active {
-  background: #007bff;
+  background: #c6a052;
   color: #fff;
   font-weight: 600;
 }
@@ -7575,3 +7576,25 @@ footer .footer-bottom .text-end li {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.services-items .item .icon {
+    background: #c59e4f;
+}
+
+.services-items .item .icon i {
+    color: #000000;   /* black icon */
+}
+/* Remove gradient backgrounds from icons */
+.services-area .services-items .owl-item .item .icon i,
+.services-area .services-items .single-item .item .icon i {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    color: #ffffff !important; /* icon color */
+}
+
+/* Set your gold background */
+.services-area .services-items .item .icon {
+    background: #c59e4f !important;
+}
+

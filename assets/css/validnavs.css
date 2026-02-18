@@ -605,7 +605,7 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 .validnavs a {
 	color: #232323;
 	font-weight: 600;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	background: transparent;
 }
 
@@ -902,7 +902,8 @@ body {
     content: "";
     height: 105px;
     width: 200%;
-    background: var(--dark);
+    /* background: var(--dark); */
+	background: #c59e4f;
     z-index: -1;
 }
 
@@ -1986,6 +1987,7 @@ nav.navbar.validnavs.brand-center {
 	position: relative;
 	top: 3px;
 }
+
 
 @media (max-width: 1023px) {
 	a.navbar-brand {
