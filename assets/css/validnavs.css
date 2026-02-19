@@ -1464,7 +1464,7 @@ nav.navbar.validnavs.brand-center {
 
 	nav.navbar.validnavs.navbar-fixed {
 		position: absolute;
-		background: transparent;
+		/* background: transparent; */
 	}
 
 	nav.navbar.validnavs.navbar-transparent .attr-nav {
@@ -2470,12 +2470,54 @@ nav.navbar.validnavs.brand-center {
 
 @media (max-width: 550px) {
 	.attr-right {
-		display: none !important;
+		display: block !important;
 	}
 
-	.side {
+	/* .side {
 		width: 350px;
-	}
+	} */
+	  .side {
+        width: 100% !important;
+        padding: 20px;
+    }
+
+    
+    /* Reset the scale ONLY inside side menu */
+    .side .logo-light {
+       transform: none !important;   /* remove desktop scale */
+        height: 160px !important;                 /* proper mobile size */
+        width: auto;
+		
+       margin-top: -80px;
+     
+		
+    }
+
+    /* Align logo and close button properly */
+    .side .widget:first-child {
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 20px 15px;
+    }
+
+    /* Optional: adjust close button position */
+    .side .close-side {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+.side .widget .logo{
+	padding: 0 !important;
+	margin-bottom: 30px;
+
+}
+    /* Fix long email overflow */
+    .side .contact-link {
+        word-break: break-word;
+        font-size: 14px;
+    }
 
 	nav.navbar.validnavs .navbar-toggle {
 		margin: 0 15px;
