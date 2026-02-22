@@ -7555,6 +7555,7 @@ footer .footer-bottom .text-end li {
 
 .service-item h2 {
   margin-bottom: 15px;
+
 }
 
 @keyframes fadeIn {
@@ -7633,8 +7634,55 @@ footer .footer-bottom .text-end li {
 .services-area .services-items .owl-item .item {
   width: 100%;
 }
+
 @media (max-width: 991px) {
-    .services-sidebar {
-        width: 100% !important;
-    }
+  .services-sidebar {
+    width: 100% !important;
+  }
+
+  .service-item h2 {
+    font-size: 24px;
+
+  }
+}
+
+/* Hide mobile social icons by default */
+.mobile-social-icons {
+  display: none;
+}
+
+/* Show only in small mobile screens */
+@media (max-width: 767px) {
+
+  .mobile-social-icons {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+  }
+
+  .mobile-social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-social-icons ul li {
+    display: inline-block;
+    margin: 0 12px;
+  }
+
+  .mobile-social-icons ul li a {
+    font-size: 18px;
+    color: #000;
+    /* change to #c6a052 if needed */
+  }
+
+  .custom-social {
+    display: none;
+  }
+  .site-heading h5{
+    margin-top: 40px;
+  }
 }
