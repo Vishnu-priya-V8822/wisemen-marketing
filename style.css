@@ -370,12 +370,14 @@ p {
   .container-medium {
     max-width: 540px;
   }
+
 }
 
 @media (min-width:768px) {
   .container-medium {
     max-width: 720px;
   }
+
 }
 
 @media (min-width:992px) {
@@ -395,13 +397,22 @@ p {
   .container-full {
     max-width: 540px;
   }
+
+
 }
+
+
 
 @media (min-width:768px) {
   .container-full {
     max-width: 720px;
   }
+
+
+
 }
+
+
 
 @media (min-width:992px) {
   .container-full {
@@ -995,7 +1006,7 @@ p {
 }
 
 .btn.btn-light {
-  color:#ffffff;
+  color: #ffffff;
   border: none;
   background: #000000;
   border: 2px solid transparent;
@@ -7442,22 +7453,25 @@ footer .footer-bottom .text-end li {
   /* visually increases size */
   transform-origin: left center;
 }
-.logo-light{
-   height: 60px;
+
+.logo-light {
+  height: 60px;
   /* actual image height */
   width: auto;
   transform: scale(4);
   /* visually increases size */
   transform-origin: left center;
 }
-.logo-mobile{
-    height: 60px;
-    /* actual image height */
-    width: auto;
-    transform: scale(2);
-    /* visually increases size */
-    transform-origin: left center;
+
+.logo-mobile {
+  height: 60px;
+  /* actual image height */
+  width: auto;
+  transform: scale(2);
+  /* visually increases size */
+  transform-origin: left center;
 }
+
 .services-equal {
   display: flex;
   flex-wrap: wrap;
@@ -7579,39 +7593,48 @@ footer .footer-bottom .text-end li {
 }
 
 .services-items .item .icon {
-    background: #c59e4f;
+  background: #c59e4f;
 }
 
 .services-items .item .icon i {
-    color: #000000;   /* black icon */
+  color: #000000;
+  /* black icon */
 }
+
 /* Remove gradient backgrounds from icons */
 .services-area .services-items .owl-item .item .icon i,
 .services-area .services-items .single-item .item .icon i {
-    background: none !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: unset !important;
-    color: #ffffff !important; /* icon color */
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: #ffffff !important;
+  /* icon color */
 }
 
 /* Set your gold background */
 .services-area .services-items .item .icon {
-    background: #c59e4f !important;
+  background: #c59e4f !important;
 }
 
-.banner-btn{
+.banner-btn {
   margin-bottom: 100px;
 }
+
 /* Equal height cards without breaking layout */
 .services-area .services-items .owl-stage {
-    display: flex;
+  display: flex;
 }
 
 .services-area .services-items .owl-item {
-    display: flex;
-    height: auto;
+  display: flex;
+  height: auto;
 }
 
 .services-area .services-items .owl-item .item {
-    width: 100%;
+  width: 100%;
+}
+@media (max-width: 991px) {
+    .services-sidebar {
+        width: 100% !important;
+    }
 }
