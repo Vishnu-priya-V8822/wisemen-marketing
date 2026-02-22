@@ -7602,3 +7602,16 @@ footer .footer-bottom .text-end li {
 .banner-btn{
   margin-bottom: 100px;
 }
+/* Equal height cards without breaking layout */
+.services-area .services-items .owl-stage {
+    display: flex;
+}
+
+.services-area .services-items .owl-item {
+    display: flex;
+    height: auto;
+}
+
+.services-area .services-items .owl-item .item {
+    width: 100%;
+}
