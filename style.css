@@ -1006,21 +1006,37 @@ p {
 }
 
 .btn.btn-light {
+  position: relative;
+  background: #000000;
   color: #ffffff;
   border: none;
-  background: #000000;
-  border: 2px solid transparent;
+  overflow: hidden;
+  z-index: 1;
 }
+.btn.btn-light::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;   /* Hide initially */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 
+  background: linear-gradient(90deg, #000000, #c6a052);
+  transition: all 0.4s ease-in-out;
+}
+.btn.btn-light:hover::after {
+  left: 0;
+}
 .btn.btn-light.btn-md {
   padding: 15px 40px;
 }
 
-.btn.btn-light:hover {
+/* .btn.btn-light:hover {
   color: var(--white);
   background: transparent;
   border: 2px solid var(--white);
-}
+} */
 
 .btn.btn-dark {
   color: var(--white);
@@ -1627,6 +1643,7 @@ a.btn-simple.md.light:hover {
 @media (min-width: 1200px) {
   .site-heading h2 {
     font-size: 50px;
+    margin-top: 50px;
   }
 
   .title {
@@ -3514,9 +3531,9 @@ body,
 }
 
 @media only screen and (min-width: 1000px) {
-  .services-area .services-stage-carousel.owl-carousel .owl-stage {
+  /* .services-area .services-stage-carousel.owl-carousel .owl-stage {
     left: -100px;
-  }
+  } */
 }
 
 .services-area .single-item {
@@ -6849,6 +6866,10 @@ i.fas.fa-envelope-open {
   /* background: linear-gradient(to bottom right, #c6a052, #000000); */
   background-color: #c6a052;
 }
+.cornflower-blue .contact-us-area form button {
+  /* background: linear-gradient(to bottom right, #c6a052, #000000); */
+  background-color: #c6a052;
+}
 
 .eastern-blue .contact-us-area form button {
   background: linear-gradient(90deg, rgba(27, 170, 160, 1) 0%, rgba(8, 115, 107, 1) 77%);
@@ -7685,4 +7706,8 @@ footer .footer-bottom .text-end li {
   .site-heading h5{
     margin-top: 40px;
   }
+}
+.custom-services-container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
