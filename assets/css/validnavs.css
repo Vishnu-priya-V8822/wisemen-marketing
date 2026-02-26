@@ -944,7 +944,7 @@ body.on-side nav.navbar::after {
 }
 
 .side .close-side i {
-	font-weight: 100;
+	font-weight: 900;
 }
 
 .side .widget.address ul li p {
